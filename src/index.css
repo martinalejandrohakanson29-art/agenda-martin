@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-inverse-on-surface: #9b9d9e;
+  --color-on-error: #fff7f6;
+  --color-primary-fixed: #e5e2e1;
+  --color-secondary-fixed: #dde3eb;
+  --color-tertiary: #005bc2;
+  --color-error-dim: #4e0309;
+  --color-secondary-container: #dde3eb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container: #eaeff1;
+  --color-surface-variant: #dbe4e7;
+  --color-surface-container-low: #f1f4f6;
+  --color-inverse-surface: #0c0f10;
+  --color-inverse-primary: #ffffff;
+  --color-on-primary-fixed-variant: #5c5b5b;
+  --color-secondary: #596066;
+  --color-background: #f8f9fa;
+  --color-error: #9f403d;
+  --color-surface-container-high: #e2e9ec;
+  --color-on-tertiary-container: #000000;
+  --color-tertiary-fixed-dim: #006ee6;
+  --color-error-container: #fe8983;
+  --color-primary-container: #e5e2e1;
+  --color-on-background: #2b3437;
+  --color-on-secondary: #f6f9ff;
+  --color-on-secondary-fixed-variant: #565c63;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-on-secondary-container: #4c5259;
+  --color-on-secondary-fixed: #3a4046;
+  --color-on-tertiary: #f9f8ff;
+  --color-primary-dim: #535252;
+  --color-surface-container-highest: #dbe4e7;
+  --color-on-tertiary-fixed-variant: #f8f8ff;
+  --color-on-surface: #2b3437;
+  --color-secondary-dim: #4d545a;
+  --color-on-primary-container: #525151;
+  --color-surface-tint: #5f5e5e;
+  --color-on-primary: #faf7f6;
+  --color-surface-dim: #d1dce0;
+  --color-tertiary-fixed: #007aff;
+  --color-tertiary-dim: #0050ab;
+  --color-secondary-fixed-dim: #cfd5dd;
+  --color-on-error-container: #752121;
+  --color-primary-fixed-dim: #d6d4d3;
+  --color-outline-variant: #abb3b7;
+  --color-outline: #737c7f;
+  --color-tertiary-container: #007aff;
+  --color-primary: #5f5e5e;
+  --color-on-surface-variant: #586064;
+  --color-on-primary-fixed: #403f3f;
+  --color-surface: #f8f9fa;
+  --color-surface-bright: #f8f9fa;
+
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-surface-container);
+  border-radius: 10px;
+}
